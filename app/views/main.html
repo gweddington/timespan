@@ -1,0 +1,32 @@
+<div class="hero-unit">
+<div class="input-append">
+	<input type="text" ng-model="taskName" ng-keydown="addOnEnter($event)" placeholder="Enter task description" autofocus/>
+	<button ng-click="addTask()" class="btn btn-warning">New</button>
+</div>
+  <div class="container">
+      <div class="row" ng-repeat="task in tasks">
+      	<span class="span4">
+      		<span class="hours">{{task.hours}} hrs </span>
+      		<span class="task-name"> {{task.name}} </span> 
+      	</span>
+      	<span class="span2">
+	      	<span ng-show="task.isOpen()">{{task.startTime()}}</span>
+	      	<i class="icon-trash pull-right delete icon-white" ng-click="removeTask(task)"></i>
+	      	<i ng-click="task.stop()" ng-show="task.isOpen()" class="icon-stop icon-white stop pull-right"></i>
+	      	<i ng-click="task.start()" ng-hide="task.isOpen()" class="icon-play icon-white start pull-right"></i>
+	    </span>
+      </div>
+      <div class="row">
+      	<span class="span4 total" ng-bind="totalHours() + ' hrs'"></span>
+      	<span class="span2">
+      		<i class="icon-fire pull-right clear" ng-click="clearTasks()">&nbsp;&nbsp;&nbsp;&nbsp;Clear</i>
+      	</span>
+      </div>
+  </div>
+</div>
+
+
+
+<!--div class="perspective">
+	<button class="btns btn-8 btn-8g" ng-click="doSomething($event)">Do Something</button>
+</div-->

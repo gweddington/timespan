@@ -1,0 +1,140 @@
+body {
+    background: #1a1a1a;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #b7b7b7;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 455px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #1d1d1d;
+    background: linear-gradient( 140deg, #1a1a1a, #1d272d 50%, #1a1a1a );
+    background: radial-gradient( #1d272d, #1a1a1a );
+    border-radius: 6px;
+    padding: 60px;
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+label {
+    color: #707070;
+}
+
+input[type='text'] {
+    width: 390px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #c7c7c7;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
+}
+
+.hours {
+  width: 80px;
+  display: inline-block;
+}
+.task-name {
+    margin-left: 20px;
+}
+
+.row + .row {
+    margin-top: 10px;
+}
+
+.total {
+  color: #6abed8;
+  font-weight: 400;
+  border-top: 2px solid #707070;
+}
+
+.delete, .stop, .start {
+    margin-top: 4px;
+    margin-left:  5px;
+    border-radius: 12px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.delete {
+    background-color: #b32f24;
+    border-color: #b32f24;
+}
+
+.stop {
+    background-color: #707070;
+    border-color: #707070;
+}
+
+.start {
+    background-color: #607625;
+    border-color: #607625;
+}
+
+.clear {
+    margin-top: 10px;
+    margin-right: 41px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: #2a2a2a;
+}
+.delete:hover {
+    /*background-color: red;
+    border-color: red;*/
+    background-image: url(http://localhost:9000/images/glyphicons-halflings.png);
+}
+
+.start:hover {
+    /*background-color: green;
+    border-color: green;*/
+    background-image: url(http://localhost:9000/images/glyphicons-halflings.png);
+}
+
+.stop:hover {
+    /*background-color: #505050;
+    border-color: #505050;*/
+    background-image: url(http://localhost:9000/images/glyphicons-halflings.png);
+}
+.clear:hover {
+    background-color: #b32f24;
+    border-color: #b32f24;
+    background-image: url(http://localhost:9000/images/glyphicons-halflings-white.png);
+    color: #707070;
+}
+
+[class^="icon-"] {
+    cursor: pointer;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background-image: -moz-linear-gradient(top, #e07d4a, #d35f24);
+  background-image: -ms-linear-gradient(top, #e07d4a, #d35f24);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e07d4a), to(#d35f24));
+  background-image: -webkit-linear-gradient(top, #e07d4a, #d35f24);
+  background-image: -o-linear-gradient(top, #e07d4a, #d35f24);
+  background-image: linear-gradient(top, #e07d4a, #d35f24);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'e07d4a, endColorstr='#'d35f24, GradientType=0);
+}
+
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning.active,
+.btn-warning.disabled,
+.btn-warning[disabled] {
+  background-color: #d35f24;
+}
